@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title":"topics",
+  "type":"object",
+  "properties" : {
+    "topics1" : {
+      "type" : "array",
+      "item" : {
+        "type":"object",
+        "properties":{
+          "id":{"type": "number"},
+          "title": {"type": "string"}
+        }
+      }
+    }
+  },
+  "required" : [ "topics" ]
+}
