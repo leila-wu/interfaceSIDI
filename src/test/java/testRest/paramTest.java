@@ -3,6 +3,7 @@ package testRest;
 import io.restassured.http.ContentType;
 import io.restassured.http.Cookie;
 import io.restassured.http.Cookies;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.HashMap;
@@ -15,6 +16,7 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class paramTest {
 
+    @Ignore("Not Ready to Run")
     @Test
     public void testBaidu() {
         //带json传参数发送
@@ -31,6 +33,7 @@ public class paramTest {
 
     }
 
+    @Ignore("Not Ready to Run")
     @Test
     public void testParm1() {
         useRelaxedHTTPSValidation();
@@ -40,6 +43,7 @@ public class paramTest {
                 .then().statusCode(200);
     }
 
+    @Ignore("Not Ready to Run")
     @Test
     public void testParm2() {
         useRelaxedHTTPSValidation();
@@ -49,6 +53,7 @@ public class paramTest {
                 .then().statusCode(200);
     }
 
+    @Ignore("Not Ready to Run")
     @Test
     public void testParm3() {
         useRelaxedHTTPSValidation();
@@ -64,6 +69,7 @@ public class paramTest {
         ;
     }
 
+    @Ignore("Not Ready to Run")
     @Test
     public void testParm4() {
         //路径参数
@@ -76,6 +82,7 @@ public class paramTest {
         ;
     }
 
+    @Ignore("Not Ready to Run")
     @Test
     public void testParm6() {
         //路径参数2
@@ -87,6 +94,7 @@ public class paramTest {
 
 
 
+    @Ignore("Not Ready to Run")
     @Test
     public void testChanDao1() {
         //cookie设置
@@ -113,6 +121,7 @@ public class paramTest {
         ;
     }
 
+    @Ignore("Not Ready to Run")
     @Test
     public void testChanDao2() {
 
@@ -166,6 +175,7 @@ public class paramTest {
                 .then().statusCode(200);
     }
 
+    @Ignore("Not Ready to Run")
     @Test
     public void zentaoSeeBUG(){
         given().log().all()

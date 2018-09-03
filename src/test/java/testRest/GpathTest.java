@@ -50,8 +50,8 @@ public class GpathTest {
         //查看图书的标签总数大于6
         when().get("https://api.douban.com/v2/book/1220562/tags")
                 .then().log().all()
-                .body("tags.count.size()",lessThan(6));
-//                .body("tags.count.size()", greaterThan(6));
+//                .body("tags.count.size()",lessThan(6));
+                .body("tags.count.size()", greaterThan(6));
     }
 
     @Test

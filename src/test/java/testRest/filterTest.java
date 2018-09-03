@@ -7,6 +7,7 @@ import io.restassured.filter.session.SessionFilter;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 
@@ -39,6 +40,7 @@ public class filterTest {
                 } );
     }
 
+    @Ignore("Not Ready to Run")
     @Test
     public void baidu() {
         //截取发送的请求，对request修改，增加cookile
@@ -140,11 +142,7 @@ public class filterTest {
 
     }
 
-    @Test
-    public void testJenkinsSession(){
-        RestAssured.config = RestAssured.config().sessionConfig(new SessionConfig().sessionIdName(""));
 
-    }
 
     //    @BeforeClass
 //    public void setUp() throws Exception {

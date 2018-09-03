@@ -4,6 +4,7 @@ import com.github.fge.jsonschema.cfg.ValidationConfiguration;
 import com.github.fge.jsonschema.main.JsonSchemaFactory;
 import io.restassured.response.Response;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -43,6 +44,7 @@ public class jsonSchemaTest {
     }
 
 
+    @Ignore("Not Ready to Run")
     @Test
     public void jsonchema() {
         useRelaxedHTTPSValidation();
@@ -58,6 +60,7 @@ public class jsonSchemaTest {
 //        get("/products").then().assertThat().body(matchesJsonSchemaInClasspath("products-schema.json").using(jsonSchemaFactory));
     }
 
+    @Ignore("Not Ready to Run")
     @Test
     public void xmlschema(){
         get("/carRecords").then().assertThat().body(matchesXsd("xxx.xsd"));

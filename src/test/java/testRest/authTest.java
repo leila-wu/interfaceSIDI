@@ -3,6 +3,7 @@ package testRest;
 import io.restassured.builder.ResponseBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.Base64;
@@ -13,6 +14,7 @@ import static org.hamcrest.Matchers.equalTo;
 public class authTest {
     //auth ,认证授权
 
+    @Ignore("Not Ready to Run")
     @Test
     public void testAuth1(){
         // hogwarts : 123456
